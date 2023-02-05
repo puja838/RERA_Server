@@ -1,0 +1,204 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RERA FORM (F)</title>
+</head>
+
+<body>
+    <div style="padding-left: 20px;padding-right: 20px;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="color:#000;">
+            <tr>
+                <td align="center" valign="middle" style="padding:15px 0"><img src="http://phloxblog.in/rera-app/assets/images/rera-logo.png" /></td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle" style="font-size:24px; line-height:26px; font-weight:600">REAL ESTATE
+                    REGULATORY AUTHORITY, BIHAR</td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle"
+                    style="font-size:12px; line-height:18px; border-bottom:2px solid #000; padding-bottom:20px;">
+                    4<sup>TH</sup>
+                    /6<sup>TH</sup> FLOOR, BIHAR STATE BUILDING CONSTRUCTION CORPORATION LIMITED COMPLEX, SHASTRI NAGAR
+                    PATNA -
+                    800023</td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle"
+                    style="padding-top:15px;font-size:16px; line-height:18px;font-weight:600">
+                    FORM 'F'</td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle"
+                    style="padding:3px 0;font-size:15px; line-height:15px;font-weight:600">[See rule 6(4)]</td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle"
+                    style="font-size:16px; line-height:18px;text-decoration:underline; padding-bottom:20px;font-weight:600">
+                    CERTIFICATE FOR EXTENSION OF REGISTRATION OF PROJECT</td>
+            </tr>
+            <tr>
+                <td style="font-size:12px;">This extension of registration is granted under section 6, to the following project:</td>
+            </tr>
+
+            <tr>
+                <td style="padding-left: 0px; padding-bottom: 20px; padding-top: 20px;font-size:12px; color: #000;">
+                        <%= Project_Name %>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 20px;font-size:12px; color: #000;">registered with the Authority vide project
+                    registration certificate bearing No. of: <%= REGISTRATION_NUMBER %> </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding-left: 0px; padding-bottom: 20px; padding-top: 10px;font-size:12px; line-height: 32px; color: #000;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="color:#000;">
+                    <% if(entitytypeid == 1){ %>
+                        <tr>
+                            <td style="font-size:12px; line-height: 32px; color: #000; padding-right: 10px;"
+                                valign="top">1. </td>
+                            <td style="font-size:12px; line-height: 32px; color: #000;" valign="top">
+                                [in the case of of individual] [Mr./Ms.] <%= P_Full_Name %>
+                                Son of <br>
+                                [Mr./Ms.] <%= P_Gurdian_Name %>,
+
+                                <% if(Tehsil != ''){ %>
+                                 Tehsil <%= Tehsil %>,
+                                  <% } %>
+
+                                  District
+                                <%= P_District %>, State <%= P_State %>;</td>
+                        </tr>
+                    <% } %>
+
+
+                        <% if(entitytypeid != 1){ %>
+                        <tr>
+                            <td style="font-size:12px; line-height: 32px; color: #000; padding-right: 10px;"
+                                valign="top">&nbsp;</td>
+                            <td style="font-size:12px; line-height: 32px; color: #000;" valign="top">
+                                [in the case of a firm / society / company / competent authority etc.]
+                                <%= CMP_NAME %>
+                                firm / society / company / competent authority etc.]
+                                having its
+                                [registered office/principal place of business] at <%= CMP_ADDRESS %>
+                            </td>
+                        </tr>
+
+                        <% } %>
+
+
+
+
+                    </table>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td
+                    style="padding-left: 0px; padding-bottom: 20px; padding-top: 10px;font-size:12px; line-height: 32px; color: #000;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="color:#000;">
+                        <tr>
+                            <td style="font-size:12px; line-height: 32px; color: #000; padding-right: 10px;"
+                                valign="top">2. </td>
+                            <td style="font-size:12px; line-height: 32px; color: #000;" valign="top">This extension of
+                                registration is granted subject to the following conditions, namely:_</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:12px; line-height: 32px; color: #000; padding-right: 10px;"
+                                valign="top">&nbsp; </td>
+                            <td style="font-size:12px; line-height: 32px; color: #000;" valign="top">
+                                <table>
+                                    <tr>
+                                        <td style="font-size:12px; line-height: 24px; color: #000; padding-right: 10px;"
+                                            valign="top">(i)</td>
+                                        <td style="font-size:12px; line-height: 24px; color: #000;" valign="top">The
+                                            promoter shall execute and register a conveyance deed in favour of the
+                                            allottee or the association of the allottees, as the case may be, of the
+                                            apartment, plot or building, as the case may be, or the common areas as per
+                                            section 17;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size:12px; line-height: 24px; color: #000; padding-right: 10px;"
+                                            valign="top">(ii)</td>
+                                        <td style="font-size:12px; line-height: 24px; color: #000;" valign="top">The
+                                            promoter shall deposit seventy per cent. of the amounts realised by the
+                                            promoter in a separate account to be maintained in a schedule bank to cover
+                                            the "oo oi.onrorction and the land cost to be used only for that purpose as
+                                            per sub-clause (D) of clause (1) of sub-section (2)) of section 4;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size:12px; line-height: 24px; color: #000; padding-right: 10px;"
+                                            valign="top">(iii)</td>
+                                        <td style="font-size:12px; line-height: 24px; color: #000;" valign="top">
+                                            The registration shall be extended by a period of <%= VALIDATION_YEAR['daysAll'] %>
+                                            [days/weeks/months] and shall be valid until <%= validityDate %> </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size:12px; line-height: 24px; color: #000; padding-right: 10px;"
+                                            valign="top">(iv)</td>
+                                        <td style="font-size:12px; line-height: 24px; color: #000;" valign="top">The
+                                            promoter shall comply with the provisions of the Act and the rules and
+                                            regulations made thereunder;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size:12px; line-height: 24px; color: #000; padding-right: 10px;"
+                                            valign="top">(v)</td>
+                                        <td style="font-size:12px; line-height: 24px; color: #000;" valign="top">The
+                                            promoter shall not contravene the provisions of any other law for the time
+                                            being in force as applicable to the project;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size:12px; line-height: 24px; color: #000; padding-right: 10px;"
+                                            valign="top">(vi)</td>
+                                        <td style="font-size:12px; line-height: 24px; color: #000;" valign="top">If the
+                                            above mentioned conditions are not fulfilled by the promoter, the Authority
+                                            may take necessary action against the promoter. including revoking the
+                                            registration granted herein, as per the Act and the rules and regulations
+                                            made thereunder.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="padding-left: 0px;padding-top: 20px; font-size:12px; color: #000;">Place: </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 0px;padding-top: 20px; font-size:12px; color: #000;">Date: </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 0px;padding-top: 20px; font-size:12px; color: #000;text-align: right;">
+                    Signature and seal of the Authorised Officer </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 0px;padding-top: 20px; font-size:12px; color: #000; text-align: right;">Real
+                    Estate Regulatory Authority </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+
+</html>

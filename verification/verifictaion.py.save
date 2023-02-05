@@ -1,0 +1,62 @@
+from contour_and_text import *
+from invoice_digitisation import *
+from data_uplaod import *
+import sys
+import json
+import ast
+
+
+def document_verification(sample_name,input_string,input_status):
+	input_path = sample_name
+	print("7777777777777777777777777777777777777", input_status)
+	if int(input_status) == 1:
+
+		try:
+			print(input_string)
+			if len(input_string.strip()) == 0:
+				return 0
+			print("1111111111")			
+			adhar = adhar_card_verifictaion()
+			print("2222222222")
+			result = adhar.text_extraction(input_path)
+			print("result>>>> ", result)
+			input_string = input_string.lower().replace(' ','').strip()
+				
+			if input_string in result.lower():
+				return 1
+
+			else:
+				pan = pan_verification()
+				result = pan.pan_text_detection(input_path,input_string)
+
+				if result == 'yes':
+					return 1
+				else:
+					return 0
+
+		except Exception as e:
+			print(e)
+			return 0
+	else:
+
+		try:
+
+			input_string= ast.literal_eval(input_string)
+
+			data = ExtractFile(input_path)
+
+			result = data.verifictaion_status(input_string)
+
+			# print("result >>> ",result)
+
+			return result
+
+		except Exception as e:
+			print(e)
+			return 0
+
+
+
+
+
+
